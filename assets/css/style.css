@@ -31,12 +31,9 @@
 --mesh-color-4: #c8ceda;
 --gradient-news-letter: linear-gradient(135deg, var(--mesh-color-1), var(--mesh-color-2)),
 linear-gradient(225deg, var(--mesh-color-3), var(--mesh-color-4));
---banner-mesh-1: #fcf4f4;
---banner-mesh-2: #fcf4f4;
---banner-mesh-3: #fcf4f4;
---banner-mesh-4: #fcf4f4;
---gradient-banner-mesh: linear-gradient(135deg, var(--banner-mesh-1), var(--banner-mesh-2)),
-linear-gradient(225deg, var(--banner-mesh-3), var(--banner-mesh-4));
+
+--gradient-banner-mesh: linear-gradient(to right,  #f0f0f0 0%, #f0f0f0 100%), radial-gradient(circle at top left, #f0f0f0, #f0f0f0);
+
     /* Text Color */
     --primary-text: #00c6ff;
     --secondary-text: #0072ff;
@@ -280,46 +277,14 @@ p {
     transition: all .4s ease 0s;
 }
 
-.about_wrapper .single-logo-item:hover {
-    border: 0.0625rem solid transparent;
-    box-shadow: 0 0.5rem 1.875rem rgb(118 85 225 / 15%);
+.borders {
+    border: 4px solid #f0f0f0;
+    border-radius: 10px; /* Adjust the value as needed for more or less curve */
 }
 
-.about_wrapper .client-info {
-    padding: 1.5625rem 1.875rem;
-    background: var(--bg-light);
-    position: relative;
-    margin-top: 1.5625rem;
-}
 
-.about_wrapper .client-info:before {
-    content: '';
-    position: absolute;
-    top: -1.5625rem;
-    left: -3.4375rem;
-    background: url('../images/client-info.webp');
-    background-repeat: no-repeat;
-    height: 10.9375rem;
-    width: 10.9375rem;
-}
 
-.client-info .large {
-    color: var(--secondary-text);
-    font-family: var(--primary-font);
-    font-size: 6.25rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 9;
-}
 
-.client-info .smll {
-    text-align: left;
-    color: var(--text-black);
-    font-family: var(--primary-font);
-    font-size: 1.25rem;
-    margin-left: 1.25rem;
-    font-weight: 500;
-}
 
 .about_wrapper img.img-fluid {
     border: 4px dashed  var(--mesh-color-1); /* 4px dashed border with red color */
@@ -825,3 +790,23 @@ p {
     }
 }
 
+
+
+.profile-img {
+    border-radius: 15px;
+    width: 100%;
+    height: 83%;
+}
+.image-gallery {
+    background-color: red;
+    width: 50%;
+    margin: 0 auto; /* Centers the gallery */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Evenly distributes images */
+}
+.gallery-image {
+    height: 100%; /* Ensures the images take up the full height of their container */
+    width: 48%; /* Slightly less than half to account for spacing */
+    margin-bottom: 2%; /* Adds a small gap between rows */
+}
