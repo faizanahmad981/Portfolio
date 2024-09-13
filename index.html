@@ -15,6 +15,18 @@
     <script src="https://kit.fontawesome.com/5ef2a61ca7.js" crossorigin="anonymous"></script>
     <!-- Custom File's Link -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "jpN6fK64PFeBdBUZB",
+       });
+    })();
+ </script>
    <style>
         .portfolio-img {
             position: relative;
@@ -579,9 +591,34 @@
         </div> 
     </section>
 
+  
 
-
-
+    <section class="contact section" id="contact">
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <h2 class="section-title text-center mb-4">Contact me</h2>
+              <div class="contact__container">
+                <form id="contactForm" class="contact__form">
+                  <div class="form-group">
+                    <input type="text" id="from_name" placeholder="Name" class="form-control contact__input" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="email_id" placeholder="Email" class="form-control contact__input" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="message" placeholder="Description" rows="5" class="form-control contact__input" required></textarea>
+                  </div>
+                  <div class="d-flex ">
+                    <input type="button" id="submitButton" onclick="semdmain()" value="Submit" class="btn btn-primary contact__button button">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
   
     <!-- Footer section exit -->
 <!-- Modal for Project 1 with Carousel, Thumbnails, and Gallery -->

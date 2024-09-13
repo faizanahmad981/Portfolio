@@ -513,6 +513,41 @@ p {
     color: var(--primary-color);
 }
 
+
+.contact__input {
+   
+    background-image: var(--gradient);
+    color: var(--secondary-text);
+    border-color: var(--secondary-color);
+    font-size: 1rem;
+    width: 400px;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var( --gradient); /* Bootstrap's secondary color */
+    margin-bottom: 1rem;
+    outline: none;
+}
+.contact__input:focus {
+    background-color:#00c6ff; /* Keep the original background color */
+    border-color: #0072ff; /* Optional: keep the same border color on focus */
+}
+
+.section-title{
+    
+    width: 400px;
+}
+.contact__button {
+    width: 70%; /* Set button width to 50% to make it more compact */
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color:#00c6ff; /* Keep the original background color */
+    border-color: #0072ff; /* Optional: keep the same border color on focus */
+}
+
+
 /*Responsive Design*/
 
 @media (max-width: 1199.5px) {

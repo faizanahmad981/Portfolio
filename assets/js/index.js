@@ -124,3 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
     startTypingEffect();
 });
 
+function semdmain(){
+
+    let params={
+        from_name: document.getElementById("from_name").value,
+  email_id: document.getElementById("email_id").value,
+  message: document.getElementById("message").value,
+ }
+ emailjs.send("service_az6wksp","template_fzmdhbl",params).then(alert("Email send !!"));
+ 
+ }
