@@ -260,10 +260,11 @@ p {
 
 /* 4 About */
 .about_wrapper{
-    background: var(--gradient-banner-mesh);
+    background: var(--gradient-banner-mesh);/*  background: var(--gradient-banner-mesh); */
 }
 .about_wrapper .single-logo-item {
     width: 100%;
+    max-width: 100%;
     height: 6.875rem;
     display: flex;
     align-items: center;
@@ -333,16 +334,23 @@ p {
 }
 
 .services_wrapper {
-    background: var(--gradient-banner-mesh);
+    background: var(--mesh-color-1);
+    width: 100%; 
+    padding: 0; 
+    margin: 0 auto; 
 }
 
 .services_wrapper .card {
     background-color: var(--bg-light);
     cursor: pointer;
+    width: 100%; 
+    
+    padding: 16px; 
     -webkit-transition: all .4s ease 0s;
     -moz-transition: all .4s ease 0s;
     -o-transition: all .4s ease 0s;
     transition: all .4s ease 0s;
+    box-sizing: border-box; 
 }
 
 .services_wrapper .card:hover {
@@ -624,8 +632,7 @@ p {
         left: 34%;
     }
 }
-        
-      
+
 
 /*  education */
 .timeline-dot {
